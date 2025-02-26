@@ -1,0 +1,15 @@
+total 124
+-rwxrwxrwx 1 jaygraham jaygraham  1221 Feb 25 21:41 README.md
+-rwxrwxrwx 1 jaygraham jaygraham   134 Feb 24 14:29 history.sh
+-rwxrwxrwx 1 jaygraham jaygraham     0 Feb 25  2025 ls.out
+drwxrwxrwx 1 jaygraham jaygraham   512 Feb 19 10:39 output
+drwxrwxrwx 1 jaygraham jaygraham   512 Feb 25 21:45 reid
+-rwxrwxrwx 1 jaygraham jaygraham    42 Feb 24 15:42 techShellcd.sh
+-rwxrwxrwx 1 jaygraham jaygraham 10305 Feb 25 21:56 techshell.c
+-rwxrwxrwx 1 jaygraham jaygraham 16952 Feb 25 21:56 techshell1
+-rwxrwxrwx 1 jaygraham jaygraham 17064 Feb 25 18:23 techshell2
+-rwxrwxrwx 1 jaygraham jaygraham  6514 Feb 25 18:23 techshell2.c
+-rwxrwxrwx 1 jaygraham jaygraham 16784 Feb 25 19:37 techshell3
+-rwxrwxrwx 1 jaygraham jaygraham  5239 Feb 25 19:39 techshell3.c
+-rwxrwxrwx 1 jaygraham jaygraham 16864 Feb 25 19:55 techshell4
+-rwxrwxrwx 1 jaygraham jaygraham  6709 Feb 25 19:56 techshell4.c
