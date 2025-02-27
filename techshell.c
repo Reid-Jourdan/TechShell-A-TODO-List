@@ -81,6 +81,10 @@ struct ShellCommand split_line(char *line)
         {
             commandLine.seperator = ';';
         }
+        else if (strcmp("|", token) == 0)
+        {
+            commandLine.seperator = '}';
+        }
 
         if (position >= buffsize)
         {
@@ -127,7 +131,7 @@ int execute_cmd(struct ShellCommand commandLine)
         return 1;
     }
 
-    if (commandLine.seperator == '<' || commandLine.seperator == '>'  || commandLine.seperator == '.')
+    if (commandLine.seperator == '<' || commandLine.seperator == '>' || commandLine.seperator == '.' || commandLine.seperator == '}')
     {
         pid_t child2 = fork();
         int status;
@@ -146,7 +150,7 @@ int execute_cmd(struct ShellCommand commandLine)
                     fclose(infile);
                     commandLine.args[i] = NULL;
                 }
-                 else if (strcmp(commandLine.args[i], ">") == 0)
+                else if (strcmp(commandLine.args[i], ">") == 0)
                 {
                     FILE *outfile = fopen(commandLine.args[i + 1], "w");
                     dup2(fileno(outfile), 1);
@@ -160,12 +164,71 @@ int execute_cmd(struct ShellCommand commandLine)
                     fclose(outfile);
                     commandLine.args[i] = NULL;
                 }
+                else if (strcmp(commandLine.args[i], "|") == 0)
+                {
+                    pid_t pipeChild = fork();
+
+                    if (pipeChild == 0)
+                    {
+                        FILE *outfile = fopen("plzdontmakeafilenamedthis.txt", "w");
+                        dup2(fileno(outfile), 1);
+                        fclose(outfile);
+                        commandLine.args[i] = NULL;
+
+                        execvp(commandLine.command, commandLine.args);
+                        printf("There was a problem executing: \"%s\"\n", commandLine.command);
+                        exit(1);
+                    }
+                    else
+                    {
+                        int status;
+                        waitpid(pipeChild, &status, 0);
+                    }
+
+                    pid_t pipeChild2 = fork();
+
+                    if (pipeChild2 == 0)
+                    {
+                        FILE *infile = fopen("plzdontmakeafilenamedthis.txt", "r");
+                        dup2(fileno(infile), 0);
+                        fclose(infile);
+
+                        secondCommand.command = commandLine.args[++i];
+                        int j = 0;
+                        while (commandLine.args[i] != NULL)
+                        {
+                            secondCommand.args[j] = commandLine.args[i];
+                            i++;
+                            j++;
+                        }
+
+                        execvp(secondCommand.command, secondCommand.args);
+                        printf("There was a problem executing: \"%s\"\n", secondCommand.command);
+                        exit(1);
+                    }
+                    else
+                    {
+                        int status;
+                        waitpid(pipeChild2, &status, 0);
+                    }
+
+                    // pid_t pipeChild3 = fork();
+                    remove("plzdontmakeafilenamedthis.txt");
+                    
+                    // commandLine.args[temp] = NULL;
+                    break;
+                }
                 i++;
             }
-
-            execvp(commandLine.command, commandLine.args);
-            printf("There was a problem executing: \"%s\"\n", commandLine.command);
-            exit(1);
+            if (commandLine.seperator != '}')
+            {
+                execvp(commandLine.command, commandLine.args);
+                printf("There was a problem executing: \"%s\"\n", commandLine.command);
+                exit(1);
+            } else {
+                exit(0);
+            }
+            
         }
         else
         {
@@ -181,34 +244,7 @@ int execute_cmd(struct ShellCommand commandLine)
         int i = 0;
         while (commandLine.args[i] != NULL)
         {
-            // if (strcmp(commandLine.args[i], "<") == 0)
-            // {
-            //     FILE *infile = fopen(commandLine.args[i + 1], "r");
-            //     dup2(fileno(infile), 0);
-            //     fclose(infile);
-            //     commandLine.args[i] = NULL;
-            //     break;
-            // }
-            // else if (strcmp(commandLine.args[i], ">") == 0)
-            // {
-            //     FILE *outfile = fopen(commandLine.args[i + 1], "w");
-            //     dup2(fileno(outfile), 1);
-            //     fclose(outfile);
-            //     commandLine.args[i] = NULL;
-            //     break;
-            // }
-            // else if (strcmp(commandLine.args[i], ">>") == 0)
-            // {
-            //     FILE *outfile = fopen(commandLine.args[i + 1], "a");
-            //     dup2(fileno(outfile), 1);
-            //     fclose(outfile);
-            //     commandLine.args[i] = NULL;
-            //     break;
-            // }
-            if (strcmp(commandLine.args[i], "|") == 0)
-            {
-            }
-            else if (strcmp(commandLine.args[i], "&&") == 0)
+            if (strcmp(commandLine.args[i], "&&") == 0)
             {
                 flag = 1738;
                 int temp = i;
