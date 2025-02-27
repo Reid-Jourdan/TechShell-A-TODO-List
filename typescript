@@ -1,0 +1,98 @@
+Script started on 2025-02-26 18:13:59-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="121" LINES="25"]
+[?2004h]0;jagra@Jay-Desktop: /mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List[01;32mjagra@Jay-Desktop[00m:[01;34m/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List[00m$ ./techshell
+[?2004l
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ cd    mkdir Morgan      NikolasMorgran   an
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ cd MN  NikolasMorgan
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ touch yourself        file1`.t   .txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ nano t file. 1.txt
+[?2004h[?1049h[22;0;0t[1;25r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[23;54H(B[0;7m[ Reading... ](B[m[23;53H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                                            file1.txt                                                      [1;120H(B[m
+[24d(B[0;7m^G(B[m Help[24;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[24;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark
+[25d(B[0;7m^X(B[m Exit[25;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy
+[2d[?12l[?25h[?25l[1;69H(B[0;7m*[120G(B[m[?12l[?25h
+[2dh[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hl[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hl[?25l[?12l[?25hd[?25l[23;53H (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [120G(B[m[23;53H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;12H[?25l[23;53H (B[0;7m[ Writing... ](B[m[K[1;120H[23;53H(B[0;7m[ Wrote 1 line ](B[m[?12l[?25h[2;12H[?25l
+[23d[J[25d[?12l[?25h[25;1H[?1049l[23;0;0t
+[?1l>[?2004l/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ cat file1.txt
+hello world
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ echo "Hello" && echo "w World"
+"Hello"
+"World"
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ lksdzjhfn
+There was a problem executing: "lksdzjhfn"
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ cat < words.txt           file1.txt
+hello world
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ file1     touch filw2  e2.txt               cat >       file1.txt >> file2.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ echo jam   Jios   oshuaCoriell >> file1 2.txt            file2.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ cat fil2 e2.txt
+JoshuaCoriell
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ echo fil le1.txt >> file2.txt^[[D                               echo file1.txt >> file2.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ cat file12.   2.txt
+JoshuaCoriell
+file1.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ grep -c  file1.      " J "J" fgile    ile1 2.x txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ grep -c "J" fiole2    lke  e2.txt
+0
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ ^[[A    grep -c J file2.txt
+1
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List/NikolasMorgan$ cd ..
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ mkdir Ank         ls -alh
+total 4.7M
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:14 .
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 15:35 ..
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:02 .git
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 15:36 .vscode
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:15 NikolasMorgan
+-rwxrwxrwx 1 jagra jagra 3.3K Feb 26 18:02 README
+-rwxrwxrwx 1 jagra jagra 3.3K Feb 26 18:02 README.md
+-rwxrwxrwx 1 jagra jagra  21K Feb 26 18:04 techshell
+-rwxrwxrwx 1 jagra jagra  12K Feb 26 18:02 techshell.c
+-rwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:17 typescript
+-rwxrwxrwx 1 jagra jagra 4.7M Feb 26 18:07 words.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ chmod 777   111 words.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ ls -alh
+total 4.7M
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:14 .
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 15:35 ..
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:02 .git
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 15:36 .vscode
+drwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:15 NikolasMorgan
+-rwxrwxrwx 1 jagra jagra 3.3K Feb 26 18:02 README
+-rwxrwxrwx 1 jagra jagra 3.3K Feb 26 18:02 README.md
+-rwxrwxrwx 1 jagra jagra  21K Feb 26 18:04 techshell
+-rwxrwxrwx 1 jagra jagra  12K Feb 26 18:02 techshell.c
+-rwxrwxrwx 1 jagra jagra 4.0K Feb 26 18:17 typescript
+-r-xr-xr-x 1 jagra jagra 4.7M Feb 26 18:07 words.txt
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ ls -l | wc -l
+9
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ /bin/as       whereis
+whereis: not enough arguments
+Try 'whereis --help' for more information.
+/mnt/c/Users/JayBird/Documents/GitHub/TechShell-A-TODO-List$ man whereis
+[?1049h[22;0;0t[?1h=
+[4mWHEREIS[24m(1)                                          User Commands                                          [4mWHEREIS[24m(1)[m
+[m
+[1mNAME[0m[m
+       whereis - locate the binary, source, and manual page files for a command[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mwhereis [22m[options] [[1m-BMS [4m[22mdirectory[24m... [1m-f[22m] [4mname[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mwhereis [22mlocates the binary, source and manual files for the specified command names. The supplied names are[m
+       [1mfirst stripped of leading pathname components[22m. Prefixes of [1ms. [22mresulting from use of source code control are[m
+       also dealt with. [1mwhereis [22mthen attempts to locate the desired program in the standard Linux places, and in the[m
+       places specified by [1m$PATH [22mand [1m$MANPATH[22m.[m
+[m
+       The search restrictions (options [1m-b[22m, [1m-m [22mand [1m-s[22m) are cumulative and apply to the subsequent [4mname[24m patterns on[m
+       the command line. Any new search restriction resets the search mask. For example,[m
+[m
+          [1mwhereis -bm ls tr -m gcc[0m[m
+[m
+       searches for "ls" and "tr" binaries and man pages, and for "gcc" man pages only.[m
+[m
+       The options [1m-B[22m, [1m-M [22mand [1m-S [22mreset search paths for the subsequent [4mname[24m patterns. For example,[m
+[m
+          [1mwhereis -m ls -M /usr/share/man/man1 -f cal[0m[m
+[7m Manual page whereis(1) line 1 (press h for help or q to quit)[27m[K
+exit
+
+Script done on 2025-02-26 18:20:42-06:00 [COMMAND_EXIT_CODE="130"]
